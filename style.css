@@ -334,6 +334,24 @@ background: transparent;
   .hover-animation{
     transition: all 2s ease-in-out;
     cursor: pointer;
+    /* position: relative; */
+}
+.overlay-1 {
+  /* position: absolute;  */
+  background: rgba(57, 57, 57, 0.5);
+  
+  
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.overlay-2 {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
 }
 .hover-animation:hover{
     
@@ -350,6 +368,10 @@ background: transparent;
     width: 197px;
     height: 45.09px;
     border: none;
+    
+  }
+  .text-design{
+    color: #fff;
     
   }
    /* Feature Section End */
