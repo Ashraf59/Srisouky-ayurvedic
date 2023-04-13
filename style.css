@@ -21,13 +21,7 @@
      overflow-x: hidden;
   }
   
-  .wrapper {
-    /* max-width: 1440px; */
-    margin: 0 auto;
-  }
 /* Hamburger Manu start */
-
- 
  .login-btn{ 
 width: 113px;
 height: 37px;
@@ -213,7 +207,6 @@ background: transparent;
 
   /* Header section Start */
   #background-video {
-    /* position: fixed; */
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -224,9 +217,7 @@ background: transparent;
     bottom: 0;
   }
   .back-video{
-   
   position: absolute;
-  
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -275,6 +266,7 @@ background: transparent;
     font-weight: 600;
     border: none;
     margin-right: -115px;
+    border-radius: 50px;
   }
   .explore-now{
     font-weight: 800;
@@ -282,15 +274,12 @@ background: transparent;
     color: #fff;
     margin-top: 80px;
   }
-  
    /* Header section End */
 
    /* Feature Section Start */
    .section-view{
-    /* width: 100%;
-    height: 100vh; */
     margin-top: 80px;
-    /* position: absolute; */
+   
    }
    .verticl-mode{
     writing-mode: vertical-lr;
@@ -298,9 +287,7 @@ background: transparent;
     margin-right: 7px;
     color: var(--verticale-mood-color);
    }
-   .container{
-    /* margin-top: 100px; */
-   }
+  
    .feature-bg{
     background-image: url(assets/feature/feature-bg.png);
     background-size: cover;
@@ -328,7 +315,7 @@ background: transparent;
     position: absolute;
    }
    .package-bg{
-    /* position: relative; */
+    margin-left: 85%;
     right: 0;
     top: 0;
     margin-top: -80px;
@@ -336,14 +323,22 @@ background: transparent;
     height: 170px;
    }
    .vertical {
-    /* border-left: 6px solid blue; */
     border-left: 4px;
-  border-style: solid;
-  border-image: linear-gradient(108.08deg, #CAAC26 17.48%, #F5E590 36.87%, #B18B26 79.92%) 1;
+    border-style: solid;
+    border-image: linear-gradient(108.08deg, #CAAC26 17.48%, #F5E590 36.87%, #B18B26 79.92%) 1;
     height: 100px;
     position:absolute;
     left: 12%;
   }
+  .hover-animation{
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+.hover-animation:hover{
+    
+    transform: scale(1.1);
+}
+
   .view-more{
    
    margin-top: 120px;
@@ -395,14 +390,23 @@ background: transparent;
     width: 24px;
     height: 24px;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    
-   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
    
    }
+   .new-arrival-btn{
+    width: 95px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    border: none;
+    outline: none;
+   }
    /* Feature Product Section End*/
+
 
 /* Glimpse Video Section Start */
 .glimpse-video-section{
@@ -426,12 +430,7 @@ background: transparent;
 .glimps-section{
   margin-top: 200px;
 }
-.glimps-bg{
-  background-image: url("assets/Glimpse/glimpse-bg.png");
-  /* background: no-repeat;
-  background-position: top right; */
-  /* background-origin: content-box;  */
-}
+
 .glimpse-text-align{
   margin-left: 15%;
   margin-bottom: 100px;
@@ -445,6 +444,7 @@ background: transparent;
     left: 12%;
 }
 /* Glimpse Video Section End */
+
 
 /* Gallery Section Start */
 .gallery-section{
@@ -513,8 +513,10 @@ height: 270px;
   left: 20%;
 }
 
-
 /* Gallery Section End */
+
+
+/* Health Section Start */
 .health-section{
   margin-top: 250px;
 }
@@ -532,10 +534,11 @@ height: 270px;
     font-size: 40px;
     text-align: center;
 }
-hr {
-  height: 2px;
-  background-color: #ff0000;
-  border: none;
+.hr-line-bg{
+  padding: 2px;
+  background: #B18B26 79.92%;
+background: linear-gradient(108.08deg, #CAAC26 17.48%, #F5E590 36.87%, #B18B26 79.92%);
+
 }
 
 .health-section{
@@ -553,11 +556,11 @@ hr {
   font-weight: 400;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
- 
   color: rgba(34, 34, 34, 0.68);
-
-  
 }
+/* Health Section End */
+
+/* Track Your Order Section Start */
 .track-btn{
   width: 236px;
   height: 72px;
@@ -580,7 +583,15 @@ border-radius: 5px;
 border: none;
 padding: 20px;
 }
-
+.track-bg{
+  margin-left: 80%;
+  right: 0;
+  top: 0;
+  margin-top: -80px;
+  width: 280px;
+  height: 170px;
+}
+/* Track Your Order Section End */
 
 /* footer Section start */
 footer {
@@ -595,30 +606,14 @@ footer {
   color: #000;
 } 
 
-
-
-/* footer ul {
-  list-style: none;
-  padding-left: 20px;
-} */
-
-/* footer ul li {
-  margin: 16px 0;
-} */
-
-/* footer .links-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
-
-
 .footer-bg{
   background: #F9F6EC;
+  padding-top: 65px;
+  padding-bottom: 78px;
 }
 footer form {
   margin-left: 20px;
   margin-top: 50px;
-  position: relative;
   margin-right: 50px;
 }
 
@@ -626,30 +621,24 @@ footer form input {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 200%;
-  border-radius: 8px;
-  padding: 8px 160px 8px 32px;
   border: none;
-  /* width: 200px; */
-  height: 47.11px;
+  width: 190px;
+  max-height: 40.11px !important;
   color: #000000;
-  margin-right: 30px;
+  outline: 0;
+  
 }
 
 footer form .submit-btn {
-  position: absolute;
-  right: 1px;
-  top: 50%;
-  transform: translateY(-50%);
   background: var(--golden-gradient);
-  border-radius: 8px;
-  padding: 8px 32px;
+  padding: 8px 30px;
   border: 0;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+  width: 50%;
 } 
 
 .social-icon .ri-facebook-circle-fill,
@@ -672,10 +661,14 @@ footer form .submit-btn {
 .get-touch{
   font-weight: 600;
   font-size: 25px;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   color: #222222;
   font-family: 'Lato', sans-serif;
+ 
+}
+ul li a:hover{
+color: rgba(34, 34, 34, 0.7);
 }
   
 
